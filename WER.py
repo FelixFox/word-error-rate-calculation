@@ -23,7 +23,7 @@ def wer(r, h):
     >>> wer("".split(), "who is there".split())
     3
     """
-    # initialisation
+    # initialization
     import numpy
     d = numpy.zeros((len(r)+1)*(len(h)+1), dtype=numpy.uint8)
     d = d.reshape((len(r)+1, len(h)+1))
@@ -50,4 +50,4 @@ def wer(r, h):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-    
+     
